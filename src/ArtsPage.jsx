@@ -1,7 +1,7 @@
-export function PhotosPage() {
+export function ArtsPage() {
   return (
     <main>
-      <h1>Welcome to React!</h1>
+      <h1>Surrealist Digital Art</h1>
     </main>
   )
 }
