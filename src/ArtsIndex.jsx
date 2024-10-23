@@ -1,13 +1,30 @@
-export function ArtsIndex(arts) {
+export function ArtsIndex({arts}) {
   return (
     <div>
       <h2>The Artwork</h2>
-      {arts.map ((art) => (
+      {arts.map((art) => (
         <div key={art.id}>
           <h3>{art.title}</h3>
-          <img src={art.image_url} alt="Surrealist artpiece" />
+          <img src={art.image_url} alt="Surrealist art piece" />
           <p>{art.description}</p>
+          <p>{art.price}</p>
+        </div>
       ))}
-      
     </div>
-  )}
+  );
+}
+
+// export function ArtsIndex(arts) {
+//   return (
+//     <div>
+//       <h2>The Artwork</h2>
+//       {arts.map ((art) => (
+//         <div key={art.id}>
+//           <h3>{art.title}</h3>
+//           <img src={art.image_url} alt="Surrealist artpiece" />
+//           <p>{art.description}</p>
+//       ))}
+      
+//     </div>
+//   );
+// }
